@@ -4,8 +4,8 @@ var slider_counter = localStorage.getItem("slider_counter");
 // <!-- alert("The Value Received is " + b); -->
 var resetValue =0;
 
-// console.log(imageurl);
-// console.log(img_title);
+console.log(imageurl);
+console.log(img_title);
 console.log(slider_counter);
 
 // localStorage.setItem("imageurl", resetValue);

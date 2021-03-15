@@ -8,24 +8,24 @@ var prj_image_4 = document.getElementById("prj_image_4");
 
 prj_image_1.addEventListener("click", function() {
 	// console.log("ok");
-	prj_go_to_showcase(prj_image_1);
+	prj_go_to_showcase(prj_image_1,1);
 });
 
 prj_image_2.addEventListener("click", function() {
-	prj_go_to_showcase(prj_image_2);
+	prj_go_to_showcase(prj_image_2,2);
 });
 
 prj_image_3.addEventListener("click", function() {
-	prj_go_to_showcase(prj_image_3);
+	prj_go_to_showcase(prj_image_3,3);
 });
 
 prj_image_4.addEventListener("click", function() {
-	prj_go_to_showcase(prj_image_4);
+	prj_go_to_showcase(prj_image_4,4);
 });
 
 
 
-function prj_go_to_showcase(img_hol)
+function prj_go_to_showcase(img_hol, slider_cnt)
 {	
 	
 	const style = window.getComputedStyle(img_hol);
@@ -33,7 +33,7 @@ function prj_go_to_showcase(img_hol)
 	const url= image.slice(75,-2);
 	
 	var img_title = img_hol.getAttribute('value');
-	const slider_counter = image.slice(75,-6);
+	const slider_counter = slider_cnt;
 	
 	
 	console.log(img_title);
